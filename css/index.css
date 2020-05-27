@@ -1,0 +1,556 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+  position: relative;
+  height: 20vh;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+header .logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  /*Media Queries*/
+}
+@media (max-wtdth: 1450px) {
+  header .logo {
+    width: 10%;
+  }
+}
+@media (max-width: 800px) {
+  header .logo {
+    height: 2rem;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  header .logo {
+    align-self: center;
+    width: 30%;
+  }
+}
+header .logo .dot {
+  width: 5rem;
+  height: 4.5rem;
+  background: #C4C4C4;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 800px) {
+  header .logo .dot {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  header .logo .dot {
+    width: 20%;
+    height: 100%;
+  }
+}
+header .logo h2 {
+  justify-self: center;
+  margin-left: 1%;
+  font-size: 4.5rem;
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 800px) {
+  header .logo h2 {
+    font-size: 2.5rem;
+  }
+}
+header nav.main-nav {
+  justify-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+@media (max-width: 1450px) {
+  header nav.main-nav {
+    width: 40%;
+    margin-right: 3.5rem;
+  }
+}
+@media (max-width: 800px) {
+  header nav.main-nav {
+    display: flex;
+    text-align: center;
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  header nav.main-nav {
+    margin-top: 1rem;
+    width: 80%;
+  }
+}
+header nav.main-nav a {
+  display: flex;
+  font-size: 2rem;
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 1450px) {
+  header nav.main-nav a {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  header nav.main-nav a {
+    text-align: center;
+    width: 20%;
+  }
+}
+@media (max-width: 800px) {
+  header nav.main-nav a:hover {
+    display: flex;
+    text-decoration: underline;
+  }
+}
+header a.Home {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+}
+header a.About {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+}
+header a.Invest {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+}
+header a.Entreprenure {
+  padding-right: 1rem;
+}
+header div.login {
+  position: absolute;
+  width: 10%;
+  top: 0;
+  right: 0;
+  margin-right: 1rem;
+  display: flex;
+}
+@media (max-width: 600px) {
+  header div.login {
+    width: 25%;
+  }
+}
+header div.login a button {
+  right: 0;
+  width: 100%;
+  height: 2.5rem;
+  margin-right: 2%;
+  font-size: 1rem;
+  background: lightgrey;
+  border: none;
+  justify-content: center;
+}
+header div.login .Sign-Up {
+  background: #C4C4C4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header div.login .Sign-In {
+  background-color: white;
+  border: none;
+}
+footer {
+  width: 100%;
+  height: 8vh;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  margin-top: 1rem;
+}
+@media (max-width: 600px) {
+  footer {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+footer .logo-footer {
+  justify-self: right;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-right: 5rem;
+}
+@media (max-width: 800px) {
+  footer .logo-footer {
+    width: 20%;
+  }
+}
+@media (max-width: 600px) {
+  footer .logo-footer {
+    width: 30%;
+    align-self: center;
+    margin-left: 1rem;
+    padding-left: 9rem;
+  }
+}
+footer .logo-footer .footer-dot {
+  justify-self: right;
+  width: 3rem;
+  height: 3rem;
+  background: #C4C4C4;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 600px) {
+  footer .logo-footer .footer-dot {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+footer .logo-footer h3 {
+  justify-self: center;
+  margin-left: 1%;
+  padding-left: 1%;
+  font-size: 2rem;
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+}
+footer nav.footer-nav {
+  justify-self: right;
+  margin-left: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+@media (max-width: 1250px) {
+  footer nav.footer-nav {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  footer nav.footer-nav {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  footer nav.footer-nav {
+    width: 100%;
+    align-self: center;
+    margin-right: 6rem;
+  }
+}
+footer nav.footer-nav a {
+  display: flex;
+  font-size: 1.5rem;
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+}
+footer nav.footer-nav a.Home {
+  border-right: 2px solid black;
+  padding-right: 0.7rem;
+}
+footer nav.footer-nav a.About {
+  border-right: 2px solid black;
+  padding-right: 0.7rem;
+}
+footer nav.footer-nav a.Invest {
+  border-right: 2px solid black;
+  padding-right: 0.7rem;
+}
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/bram-van-oost-UUNzBJLXsAY-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+}
+section h1 {
+  margin: 0;
+  padding-top: 5%;
+  font-size: 3rem;
+  font-family: "Numans", Georgia, 'Times New Roman', Times, serif;
+}
+section button.learn-more {
+  margin-top: 1%;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: black;
+}
+section button.learn-more a {
+  color: white;
+  text-decoration: none;
+}
+section button.learn-more a :hover {
+  color: lightgrey;
+  transition: 2s ease-in;
+}
+.main-image {
+  height: 80vh;
+  background-image: url(https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .main-image {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    height: 450px;
+    background-size: 600px,500px;
+    background-position: top;
+  }
+}
+.main-image h1 {
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+  padding: 0;
+}
+.main-image p {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 50%;
+  color: black;
+  justify-self: center;
+  background: #7a7a7a;
+  background: linear-gradient(0deg, #7a7a7a 0%, #b0b2b3 100%);
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  .main-image p {
+    background: none;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    opacity: 1;
+  }
+}
+.main-content {
+  margin-top: 1rem;
+  background-image: none;
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
+@media (max-width: 600px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+}
+.main-content div.founder-image {
+  width: 50%;
+  height: 70%;
+  border-radius: 10%;
+  display: flex;
+  align-self: center;
+  background-position: top;
+  background-image: url(https://images.unsplash.com/flagged/photo-1579911301495-8b7e49c78f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
+}
+@media (max-width: 600px) {
+  .main-content div.founder-image {
+    align-self: center;
+    height: 60vh;
+    width: 100%;
+  }
+}
+.main-content div.pitch {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+}
+@media (max-width: 600px) {
+  .main-content div.pitch {
+    width: 100%;
+  }
+}
+.main-content div.pitch p {
+  width: 90%;
+  padding: 3%;
+}
+@media (max-width: 600px) {
+  .main-content div.pitch p {
+    width: 100%;
+    padding: 0;
+  }
+}
+.why-sign-up {
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150vh;
+}
+@media (max-width: 600px) {
+  .why-sign-up {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+}
+.why-sign-up .why-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  background-image: url(https://images.unsplash.com/photo-1563192176-46820b40a0ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+.why-sign-up .why-image p {
+  width: 50%;
+  text-align: center;
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .why-sign-up .why-image p {
+    width: 100%;
+    padding: 0;
+  }
+}
+.why-sign-up .target-audience {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100vh;
+  height: 90vh;
+}
+@media (max-width: 600px) {
+  .why-sign-up .target-audience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+.why-sign-up .target-audience .entreprenurs {
+  align-self: center;
+  width: 40%;
+  height: 90%;
+}
+@media (max-width: 600px) {
+  .why-sign-up .target-audience .entreprenurs {
+    height: 30%;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+.why-sign-up .target-audience .entreprenurs .entreprenur-image {
+  width: 100%;
+  height: 50%;
+  border-radius: 10%;
+  background-image: url(https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1224&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+  .why-sign-up .target-audience .entreprenurs .entreprenur-image {
+    width: 100%;
+    height: 80%;
+  }
+}
+.why-sign-up .target-audience .entreprenurs button.sign-up-entreprenur {
+  margin-top: 1%;
+  width: 25%;
+  height: 2rem;
+  font-size: 1.5rem;
+  background: #7a7a7a;
+  background: linear-gradient(0deg, #7a7a7a 0%, #d2d5d6 100%);
+}
+.why-sign-up .target-audience .entreprenurs button.sign-up-entreprenur a {
+  text-decoration: none;
+  color: white;
+}
+.why-sign-up .target-audience .entreprenurs button.sign-up-entreprenur:hover {
+  background: #00cdf4;
+  background: radial-gradient(circle, #00cdf4 0%, #303431 100%);
+}
+.why-sign-up .target-audience .investors {
+  align-self: center;
+  width: 40%;
+  height: 90%;
+}
+@media (max-width: 600px) {
+  .why-sign-up .target-audience .investors {
+    height: 30%;
+    width: 100%;
+  }
+}
+.why-sign-up .target-audience .investors .investors-image {
+  width: 100%;
+  height: 50%;
+  border-radius: 10%;
+  background-image: url(https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+  .why-sign-up .target-audience .investors .investors-image {
+    width: 100%;
+    height: 80%;
+  }
+}
+.why-sign-up .target-audience .investors button.sign-up-investors {
+  margin-top: 1%;
+  width: 25%;
+  height: 2rem;
+  font-size: 1.5rem;
+  background: #7a7a7a;
+  background: linear-gradient(0deg, #7a7a7a 0%, #d2d5d6 100%);
+}
+.why-sign-up .target-audience .investors button.sign-up-investors a {
+  text-decoration: none;
+  color: white;
+}
+.why-sign-up .target-audience .investors button.sign-up-investors:hover {
+  background: #86bb8d;
+  background: radial-gradient(circle, #86bb8d 0%, #343031 100%);
+}
