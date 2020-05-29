@@ -662,14 +662,14 @@ section button.learn-more a :hover {
   background: #86bb8d;
   background: radial-gradient(circle, #86bb8d 0%, #343031 100%);
 }
-.title-banner {
+.title-banner-invest {
   width: 100%;
   height: 60%;
-  background-image: url(https://images.unsplash.com/photo-1586021280718-53fbadcb65a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-image: url(../image/frank-mckenna-wrD_WHXHwHs-unsplash.jpg);
   opacity: 0.6;
   text-align: center;
 }
-.title-banner p {
+.title-banner-invest p {
   font-size: 1.5rem;
 }
 .explore-more {
