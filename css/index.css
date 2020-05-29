@@ -8,13 +8,22 @@ header {
   height: 20vh;
   box-sizing: border-box;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   header {
+    height: 40vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
   }
 }
 header .logo {
@@ -34,10 +43,16 @@ header .logo {
     width: 90%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   header .logo {
     align-self: center;
     width: 30%;
+  }
+}
+@media (max-width: 450px) {
+  header .logo {
+    width: 50%;
+    align-self: center;
   }
 }
 header .logo .dot {
@@ -55,7 +70,7 @@ header .logo .dot {
     height: 3rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   header .logo .dot {
     width: 20%;
     height: 100%;
@@ -70,6 +85,11 @@ header .logo h2 {
 @media (max-width: 800px) {
   header .logo h2 {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 450px) {
+  header .logo h2 {
+    width: 20%;
   }
 }
 header nav.main-nav {
@@ -91,10 +111,41 @@ header nav.main-nav {
     width: 50%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   header nav.main-nav {
     margin-top: 1rem;
     width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  header nav.main-nav {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav.main-nav a.Invest {
+  width: 100%;
+  border-right: 2px solid black;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+@media (max-width: 450px) {
+  header nav.main-nav a.Invest {
+    border: none;
+    text-decoration: underline;
+  }
+}
+header nav.main-nav a.Entreprenur {
+  width: 100%;
+  padding-left: 1rem;
+}
+@media (max-width: 450px) {
+  header nav.main-nav a.Entreprenur {
+    border: none;
+    text-decoration: underline;
   }
 }
 header nav.main-nav a {
@@ -115,26 +166,25 @@ header nav.main-nav a {
     width: 20%;
   }
 }
-@media (max-width: 800px) {
-  header nav.main-nav a:hover {
-    display: flex;
+header nav.main-nav a.Home {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+}
+@media (max-width: 450px) {
+  header nav.main-nav a.Home {
+    border: none;
     text-decoration: underline;
   }
 }
-header a.Home {
+header nav.main-nav a.About {
   border-right: 2px solid black;
   padding-right: 1rem;
 }
-header a.About {
-  border-right: 2px solid black;
-  padding-right: 1rem;
-}
-header a.Invest {
-  border-right: 2px solid black;
-  padding-right: 1rem;
-}
-header a.Entreprenure {
-  padding-right: 1rem;
+@media (max-width: 450px) {
+  header nav.main-nav a.About {
+    border: none;
+    text-decoration: underline;
+  }
 }
 header div.login {
   position: absolute;
@@ -144,7 +194,7 @@ header div.login {
   margin-right: 1rem;
   display: flex;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   header div.login {
     width: 25%;
   }
@@ -175,7 +225,7 @@ footer {
   display: flex;
   margin-top: 1rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   footer {
     flex-wrap: wrap;
     align-content: center;
@@ -194,12 +244,19 @@ footer .logo-footer {
     width: 20%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   footer .logo-footer {
     width: 30%;
     align-self: center;
     margin-left: 1rem;
     padding-left: 9rem;
+  }
+}
+@media (max-width: 400px) {
+  footer .logo-footer {
+    width: 100%;
+    align-self: center;
+    padding-left: 6rem;
   }
 }
 footer .logo-footer .footer-dot {
@@ -212,7 +269,7 @@ footer .logo-footer .footer-dot {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   footer .logo-footer .footer-dot {
     width: 2rem;
     height: 2rem;
@@ -242,7 +299,7 @@ footer nav.footer-nav {
     width: 60%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   footer nav.footer-nav {
     width: 100%;
     align-self: center;
@@ -268,7 +325,7 @@ footer nav.footer-nav a.Invest {
   border-right: 2px solid black;
   padding-right: 0.7rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 680px) {
   body {
     display: flex;
     flex-direction: column;
@@ -286,11 +343,26 @@ section {
   text-align: center;
   margin: 0;
 }
+@media (max-width: 400px) {
+  section {
+    height: 50vh;
+  }
+}
 section h1 {
   margin: 0;
   padding-top: 5%;
   font-size: 3rem;
   font-family: "Numans", Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 680) {
+  section h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  section h1 {
+    font-size: 1.5rem;
+  }
 }
 section button.learn-more {
   margin-top: 1%;
@@ -305,7 +377,7 @@ section button.learn-more a {
 }
 section button.learn-more a :hover {
   color: lightgrey;
-  transition: 2s ease-in;
+  transition: 1s ease-in;
 }
 .main-image {
   height: 80vh;
@@ -319,7 +391,7 @@ section button.learn-more a :hover {
   align-items: center;
   box-sizing: border-box;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .main-image {
     display: flex;
     flex-direction: column;
@@ -328,6 +400,11 @@ section button.learn-more a :hover {
     height: 450px;
     background-size: 600px,500px;
     background-position: top;
+  }
+}
+@media (max-width: 400px) {
+  .main-image {
+    height: 50vh;
   }
 }
 .main-image h1 {
@@ -344,7 +421,7 @@ section button.learn-more a :hover {
   background: linear-gradient(0deg, #7a7a7a 0%, #b0b2b3 100%);
   opacity: 0.8;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .main-image p {
     background: none;
     color: white;
@@ -360,13 +437,13 @@ section button.learn-more a :hover {
   justify-content: space-between;
   height: 90vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .main-content {
     display: flex;
     flex-direction: column;
     align-content: center;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
   }
 }
 .main-content div.founder-image {
@@ -378,11 +455,19 @@ section button.learn-more a :hover {
   background-position: top;
   background-image: url(https://images.unsplash.com/flagged/photo-1579911301495-8b7e49c78f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .main-content div.founder-image {
-    align-self: center;
-    height: 60vh;
     width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 450px) {
+  .main-content div.founder-image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .main-content div.pitch {
@@ -390,16 +475,21 @@ section button.learn-more a :hover {
   width: 50%;
   height: 50%;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .main-content div.pitch {
     width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .main-content div.pitch {
+    height: fit-content;
   }
 }
 .main-content div.pitch p {
   width: 90%;
   padding: 3%;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .main-content div.pitch p {
     width: 100%;
     padding: 0;
@@ -412,7 +502,12 @@ section button.learn-more a :hover {
   align-items: center;
   height: 150vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .why-sign-up {
+    height: 100vh;
+  }
+}
+@media (max-width: 680px) {
   .why-sign-up {
     display: flex;
     flex-direction: column;
@@ -427,7 +522,7 @@ section button.learn-more a :hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 75%;
+  height: fit-content;
   background-image: url(https://images.unsplash.com/photo-1563192176-46820b40a0ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80);
   background-position: top;
   background-size: cover;
@@ -442,7 +537,7 @@ section button.learn-more a :hover {
   text-align: center;
   opacity: 1;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .why-sign-up .why-image p {
     width: 100%;
     padding: 0;
@@ -456,14 +551,17 @@ section button.learn-more a :hover {
   height: 100vh;
   height: 90vh;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .why-sign-up .target-audience {
+    height: 45vh;
+  }
+}
+@media (max-width: 680px) {
   .why-sign-up .target-audience {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     margin-top: 0;
     padding-top: 0;
   }
@@ -473,9 +571,9 @@ section button.learn-more a :hover {
   width: 40%;
   height: 90%;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .why-sign-up .target-audience .entreprenurs {
-    height: 30%;
+    height: 40%;
     width: 100%;
     margin-top: 0;
     padding-top: 0;
@@ -490,7 +588,7 @@ section button.learn-more a :hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .why-sign-up .target-audience .entreprenurs .entreprenur-image {
     width: 100%;
     height: 80%;
@@ -503,6 +601,11 @@ section button.learn-more a :hover {
   font-size: 1.5rem;
   background: #7a7a7a;
   background: linear-gradient(0deg, #7a7a7a 0%, #d2d5d6 100%);
+}
+@media (max-width: 450px) {
+  .why-sign-up .target-audience .entreprenurs button.sign-up-entreprenur {
+    font-size: 1rem;
+  }
 }
 .why-sign-up .target-audience .entreprenurs button.sign-up-entreprenur a {
   text-decoration: none;
@@ -517,9 +620,9 @@ section button.learn-more a :hover {
   width: 40%;
   height: 90%;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .why-sign-up .target-audience .investors {
-    height: 30%;
+    height: 40%;
     width: 100%;
   }
 }
@@ -546,6 +649,11 @@ section button.learn-more a :hover {
   background: #7a7a7a;
   background: linear-gradient(0deg, #7a7a7a 0%, #d2d5d6 100%);
 }
+@media (max-width: 450px) {
+  .why-sign-up .target-audience .investors button.sign-up-investors {
+    font-size: 1rem;
+  }
+}
 .why-sign-up .target-audience .investors button.sign-up-investors a {
   text-decoration: none;
   color: white;
@@ -553,4 +661,382 @@ section button.learn-more a :hover {
 .why-sign-up .target-audience .investors button.sign-up-investors:hover {
   background: #86bb8d;
   background: radial-gradient(circle, #86bb8d 0%, #343031 100%);
+}
+.title-banner {
+  width: 100%;
+  height: 60%;
+  background-image: url(https://images.unsplash.com/photo-1586021280718-53fbadcb65a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  opacity: 0.6;
+  text-align: center;
+}
+.title-banner p {
+  font-size: 1.5rem;
+}
+.explore-more {
+  height: 40vh;
+  background-image: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding-top: 4rem;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .explore-more {
+    height: 45vh;
+    justify-items: center;
+    align-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+}
+.explore-more .register {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.explore-more .register div.clip-board {
+  width: 30%;
+  height: 20vh;
+  border-radius: 50%;
+  align-self: center;
+  background-image: url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: center left;
+  background-size: cover;
+}
+@media (max-width: 1030px) {
+  .explore-more .register div.clip-board {
+    width: 50%;
+    height: 15vh;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more .register div.clip-board {
+    width: 50%;
+    height: 10vh;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more .register div.clip-board {
+    width: 30%;
+    height: 15vh;
+  }
+}
+.explore-more .register h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.explore-more .register p {
+  width: 50%;
+  align-self: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 1030px) {
+  .explore-more .register p {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more .register p {
+    width: 80%;
+  }
+}
+.explore-more div.find-projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.explore-more div.find-projects div.search-glass {
+  width: 35%;
+  height: 20vh;
+  border-radius: 50%;
+  align-self: center;
+  background-image: url(https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-position: center left;
+  background-size: cover;
+}
+@media (max-width: 1030px) {
+  .explore-more div.find-projects div.search-glass {
+    width: 60%;
+    height: 15vh;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more div.find-projects div.search-glass {
+    width: 50%;
+    height: 10vh;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more div.find-projects div.search-glass {
+    width: 30%;
+    height: 15vh;
+  }
+}
+.explore-more div.find-projects h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.explore-more div.find-projects p {
+  width: 50%;
+  align-self: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 1030px) {
+  .explore-more div.find-projects p {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more div.find-projects p {
+    width: 80%;
+  }
+}
+.explore-more div.conect {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.explore-more div.conect div.VR-headset {
+  width: 35%;
+  height: 20vh;
+  border-radius: 50%;
+  align-self: center;
+  background-image: url(https://images.unsplash.com/photo-1554474054-1258273559a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1030px) {
+  .explore-more div.conect div.VR-headset {
+    width: 60%;
+    height: 15vh;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more div.conect div.VR-headset {
+    width: 50%;
+    height: 10vh;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more div.conect div.VR-headset {
+    width: 30%;
+    height: 15vh;
+  }
+}
+.explore-more div.conect h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.explore-more div.conect p {
+  width: 50%;
+  align-self: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 1030px) {
+  .explore-more div.conect p {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more div.conect p {
+    width: 80%;
+  }
+}
+.business {
+  width: 100%;
+  height: 60%;
+  background-image: url(https://images.unsplash.com/photo-1511203466129-824e631920d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
+  opacity: 0.6;
+  text-align: center;
+}
+.business h1 {
+  opacity: 1;
+}
+.business p {
+  font-size: 1.5rem;
+  opacity: 1;
+}
+.explore-more.today {
+  height: 40vh;
+  background-image: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding-top: 4rem;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .explore-more.today {
+    height: 45vh;
+    justify-items: center;
+    align-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more.today {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+}
+.explore-more.today .register {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.explore-more.today .register div.clip-board .paper {
+  width: 30%;
+  height: 20vh;
+  border-radius: 50%;
+  align-self: center;
+  background-image: url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: center left;
+  background-size: cover;
+}
+@media (max-width: 1030px) {
+  .explore-more.today .register div.clip-board .paper {
+    width: 50%;
+    height: 15vh;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more.today .register div.clip-board .paper {
+    width: 50%;
+    height: 10vh;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more.today .register div.clip-board .paper {
+    width: 30%;
+    height: 15vh;
+  }
+}
+.explore-more.today .register h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.explore-more.today .register p {
+  width: 50%;
+  align-self: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 1030px) {
+  .explore-more.today .register p {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more.today .register p {
+    width: 80%;
+  }
+}
+.explore-more.today div.find-projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.explore-more.today div.find-projects .search-glass.get-funded {
+  width: 40%;
+  height: 20vh;
+  border-radius: 50%;
+  align-self: center;
+  background-image: url(https://images.unsplash.com/photo-1586021280718-53fbadcb65a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-position: center left;
+  background-size: cover;
+}
+@media (max-width: 1030px) {
+  .explore-more.today div.find-projects .search-glass.get-funded {
+    width: 60%;
+    height: 15vh;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more.today div.find-projects .search-glass.get-funded {
+    width: 50%;
+    height: 10vh;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more.today div.find-projects .search-glass.get-funded {
+    width: 30%;
+    height: 15vh;
+  }
+}
+.explore-more.today div.find-projects h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.explore-more.today div.find-projects p {
+  width: 50%;
+  align-self: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 1030px) {
+  .explore-more.today div.find-projects p {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more.today div.find-projects p {
+    width: 80%;
+  }
+}
+.explore-more.today div.conect {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.explore-more.today div.conect div.VR-headset.Mentor {
+  width: 35%;
+  height: 20vh;
+  border-radius: 50%;
+  align-self: center;
+  background-image: url(https://images.unsplash.com/photo-1495510096779-5fbe73258c83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1030px) {
+  .explore-more.today div.conect div.VR-headset.Mentor {
+    width: 60%;
+    height: 15vh;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more.today div.conect div.VR-headset.Mentor {
+    width: 50%;
+    height: 10vh;
+  }
+}
+@media (max-width: 450px) {
+  .explore-more.today div.conect div.VR-headset.Mentor {
+    width: 30%;
+    height: 15vh;
+  }
+}
+.explore-more.today div.conect h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.explore-more.today div.conect p {
+  width: 50%;
+  align-self: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 1030px) {
+  .explore-more.today div.conect p {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .explore-more.today div.conect p {
+    width: 80%;
+  }
 }

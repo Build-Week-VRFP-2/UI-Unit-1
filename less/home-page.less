@@ -1,5 +1,5 @@
 body{
-    @media (max-width:500px) {
+    @media (max-width:680px) {
       display: flex;  
       flex-direction: column;
       align-content:center;
@@ -15,11 +15,20 @@ section{
     background-repeat: no-repeat;
     text-align: center;
     margin: 0;
+    @media (max-width:400px) {
+        height: 50vh;
+    }
     h1{
         margin: 0;
         padding-top: 5%;
         font-size: 3rem;
         font-family: "Numans",Georgia, 'Times New Roman', Times, serif;
+        @media (max-width:680) {
+            font-size: 1.5rem;
+        }
+        @media (max-width:400px) {
+            font-size: 1.5rem;
+        }
     }
     button.learn-more{
         margin-top: 1%;
@@ -35,7 +44,7 @@ section{
             text-decoration: none;
             :hover{
                color: lightgrey;
-               transition: 2s ease-in;
+               transition: 1s ease-in;
             }
         }
         
